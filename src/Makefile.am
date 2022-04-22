@@ -1,11 +1,11 @@
 ## Process this file with automake to produce Makefile.in
+##	headtracking       \
 
 SUBDIRS =                 \
 	boing              \
 	desktopclick       \
 	dodge              \
 	flash              \
-	headtracking       \
 	lazypointer        \
 	maze               \
 	mousegestures      \
