@@ -1,5 +1,6 @@
 ## Process this file with automake to produce Makefile.in
 ##	headtracking       \
+##	visualevent        \
 
 SUBDIRS =                 \
 	boing              \
@@ -15,7 +16,6 @@ SUBDIRS =                 \
 	roach              \
 	rubik              \
 	showrepaint        \
-	visualevent        \
 	wiimote            \
 	wiitrack           \
 	windowcapture
