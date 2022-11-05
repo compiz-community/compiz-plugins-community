@@ -1,5 +1,5 @@
 ## Process this file with automake to produce Makefile.in
-PFLAGS=-module -avoid-version -no-undefined
+PFLAGS=-fcommon -module -avoid-version -no-undefined
 
 librubik_la_LDFLAGS = $(PFLAGS)
 librubik_la_LIBADD = @COMPIZ_LIBS@
@@ -15,8 +15,6 @@ AM_CPPFLAGS =                              \
 	-DLIBDIR='"$(libdir)"'              \
 	-DLOCALEDIR="\"@datadir@/locale\""  \
 	-DIMAGEDIR='"$(imagedir)"'
-	
-LDFLAGS= -fcommon	
 
 moduledir = $(plugindir)
 
