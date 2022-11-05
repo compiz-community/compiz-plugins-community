@@ -15,6 +15,8 @@ AM_CPPFLAGS =                              \
 	-DLIBDIR='"$(libdir)"'              \
 	-DLOCALEDIR="\"@datadir@/locale\""  \
 	-DIMAGEDIR='"$(imagedir)"'
+	
+LDFLAGS= -fcommon	
 
 moduledir = $(plugindir)
 
