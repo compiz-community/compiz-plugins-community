@@ -1,7 +1,7 @@
 ## Process this file with automake to produce Makefile.in
-PFLAGS=-fcommon -module -avoid-version -no-undefined
+PFLAGS=-module -avoid-version -no-undefined
 
-librubik_la_LDFLAGS = $(PFLAGS)
+librubik_la_LDFLAGS = $(PFLAGS) -fcommon
 librubik_la_LIBADD = @COMPIZ_LIBS@
 nodist_librubik_la_SOURCES = rubik_options.c rubik_options.h
 dist_librubik_la_SOURCES = rubik.c rubik-internal.h util.c
@@ -15,6 +15,8 @@ AM_CPPFLAGS =                              \
 	-DLIBDIR='"$(libdir)"'              \
 	-DLOCALEDIR="\"@datadir@/locale\""  \
 	-DIMAGEDIR='"$(imagedir)"'
+
+LDFLAGS= -Wl,--allow-multiple-definition
 
 moduledir = $(plugindir)
 
